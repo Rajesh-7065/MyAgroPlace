@@ -1,0 +1,70 @@
+.custom-bg{
+    background:#00e676!important;
+}
+
+.seller .card{
+    border:2px solid #00e676;
+}
+
+/*CHANGING COLOR OF CARD WHEN CURSOR COMES ON IT*/
+.seller .card:hover{
+    background: #b9f6ca;
+    cursor: pointer;
+}
+
+/*STYLE FOR ACTIVE TAG IN CATEGORIES**/
+.list-group-item.active{
+    background:#00e676!important;
+    border-color:#00e676!important;
+}
+
+.product-card:hover{
+    background: #e2e2e2;
+    cursor: pointer;
+}
+#toast {
+    min-width: 300px;
+    position: fixed;
+    bottom: 30px;
+    center: 50px;
+    margin-left:-125px;
+    background: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-size: 18px;
+    left: 47%;
+    visibility: hidden;
+    box-shadow: 0px 0px 100px #000;
+}
+
+#toast.display{
+    visibility: visible;
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+    
+}
+
+@keyframes fadIn{
+    from{
+        bottom: 0;
+        opacity: 0;
+    }
+    
+    to{
+       bottom: 30px;
+       opacity: 1;
+    }
+}
+
+@keyframes fadOut{
+    from{
+        bottom: 30px;
+        opacity: 1;
+    }
+    
+    to{
+       bottom: 0;
+       opacity: 0;
+    }
+}
